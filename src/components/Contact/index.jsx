@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+// import { useRef } from 'react';
+// import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
+import { useForm, ValidationError } from '@formspree/react';
 
 const Container = styled.div`
 display: flex;
@@ -125,20 +126,35 @@ const ContactButton = styled.input`
 
 const Contact = () => {
 
-  //hooks
-  const [open, setOpen] = React.useState(false);
-  const form = useRef();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
-      .then((result) => {
-        setOpen(true);
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
-  }
+  const [state, handleSubmit] = useForm("xbjebdrn");
+  const [successMessage, setSuccessMessage] = React.useState('');
+
+  // if (state.succeeded) {
+  //   setSuccessMessage('Email sent successfully!');
+  // }  
+
+    // Set success message when form is successfully submitted
+    React.useEffect(() => {
+      if (state.succeeded) {
+        setSuccessMessage('Email sent successfully!');
+      }
+    }, [state.succeeded]);
+
+  //hooks
+  // const [open, setOpen] = React.useState(false);
+  // const form = useRef();
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
+  //     .then((result) => {
+  //       setOpen(true);
+  //       form.current.reset();
+  //     }, (error) => {
+  //       console.log(error.text);
+  //     });
+  // }
 
 
 
@@ -147,7 +163,7 @@ const Contact = () => {
       <Wrapper>
         <Title>Contact</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
+        {/* <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" required/>
           <ContactInput placeholder="Your Name" name="from_name" required/>
@@ -161,7 +177,38 @@ const Contact = () => {
           onClose={()=>setOpen(false)}
           message="Email sent successfully!"
           severity="success"
-        />
+        /> */}
+        <ContactForm onSubmit={handleSubmit}>
+          <ContactTitle>Email Me 🚀</ContactTitle>
+          <ContactInput placeholder="Your Email" name="email" type='email' id='email' required />
+          <ValidationError
+            prefix="Email"
+            field="email"
+            errors={state.errors}
+          />
+          <ContactInput placeholder="Your Name" name="name" type='name' id='name' required />
+          <ValidationError
+            prefix="Name"
+            field="name"
+            errors={state.errors}
+          />
+          <ContactInput placeholder="Subject" name="subject" required />
+          <ContactInputMessage placeholder="Message" rows="4" name="message" id='message' />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+          <ContactButton type="submit" disabled={state.submitting} />
+        </ContactForm>
+        <Snackbar
+  open={successMessage !== ''}
+  autoHideDuration={7000}
+  onClose={() => setSuccessMessage('')}
+  message={successMessage}
+  severity="success"
+/>
+
       </Wrapper>
     </Container>
   )

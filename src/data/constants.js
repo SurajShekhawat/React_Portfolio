@@ -10,7 +10,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/rishavchanda",
   resume:
-    "https://drive.google.com/file/d/1uso3OKtUd-Fvi5_fRFrX6d0_C_N0z7yH/view?usp=drive_link",
+    "https://drive.google.com/uc?export=view&id=19Hp7g0aS8YF5D14fEv_ZwQjfVQhzN7OK",
   linkedin: "https://www.linkedin.com/in/suraj-shekhawat-a5ba06218/",
   twitter: "https://twitter.com/Suraj____07",
   insta: "https://www.instagram.com/suraj_rajput_1.8/",
@@ -44,6 +44,11 @@ export const skills = [
         name: "CSS",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+      },
+      {
+        name: "Wordpress",
+        image:
+          "//s1.wp.com/i/favicons/apple-touch-icon-180x180.png",
       },
       {
         name: "JavaScript",
@@ -287,7 +292,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Youtube Clone",
+    title: "Portfolio 2.0",
     date: "Oct 2023",
     description:
       "Designed and developed the RactJS project, This is Advance Project This project is exectly copy of youtube but some reson is api is not work of this web app.",
@@ -302,6 +307,32 @@ export const projects = [
     category: "web app",
     github: "https://github.com/SurajShekhawat/Suraj_Portfoilo_Website",
     webapp: "https://suraj-introduction.netlify.app/",
+    member: [
+      {
+        name: "Suraj Singh Shekhawat",
+        img: "https://drive.google.com/uc?export=view&id=1OHecdr8bKYoADiXeUnPTCLC5-mkvNvdM",
+        linkedin: "https://www.linkedin.com/in/suraj-shekhawat-a5ba06218/",
+        github: "https://github.com/SurajShekhawat/",
+      }
+    ],
+  },
+  {
+    id: 3,
+    title: "Wordpress Website",
+    date: "Sep 2023",
+    description:
+      "Designed and developed the Wordpress project, In this use a plugin, php and backend in this project.",
+    image:
+      "https://drive.google.com/uc?export=view&id=1qzhAv3KHHgb4OdepK-C4p1QahvJ0hgKy",
+    tags: [
+      "Worpress",
+      "Plugin",
+      "php",
+      "backend"
+    ],
+    category: "wordpress",
+    github: "https://github.com/SurajShekhawat",
+    // webapp: "https://suraj-introduction.netlify.app/",
     member: [
       {
         name: "Suraj Singh Shekhawat",
@@ -352,6 +383,10 @@ export const projects = [
   //   webapp: "https://github.com/rishavchanda/Job-finder-App",
   // },
 ];
+
+// export const BlogSlider = [
+
+// ]
 
 export const TimeLineData = [
   { year: 2017, text: "Started my journey" },

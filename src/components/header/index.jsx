@@ -204,8 +204,9 @@ const Header = () => {
             <NavLink href="#skills">Skills</NavLink>
             <NavLink href="#experience">Experience</NavLink>
             <NavLink href="#projects">Project</NavLink>
+            {/*<NavLink href="#Blog">Blog</NavLink>*/}
             <NavLink href="#Contact">Contact</NavLink>
-            <a href="/Blog" rel="noopener noreferrer">Blog</a>
+            {/* <a href="/Blog" rel="noopener noreferrer">Blog</a> */}
 
           </NavItems>
           <ButtonContainer>
@@ -258,7 +259,7 @@ const Header = () => {
             >
               Project
             </MobileMenuLinks>
-
+            
             <MobileMenuLinks
               href="#Contact"
               onClick={() => {
