@@ -12,8 +12,8 @@ import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
-import Skype from './components/Skype';
-import Blog from './components/Blog';
+// import Skype from './components/Skype';
+// import Blog from './components/Blog';
 import AiFusion from "./components/Blog/Ai-Fusion/AiFusion";
 import { Switch } from "react-router-dom/cjs/react-router-dom.min";
 
@@ -59,15 +59,13 @@ function App() {
           </Wrapper>
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
-            {/* <Education /> */}
-            {/* <Blog /> */}
             <Contact />
           </Wrapper>
           <Footer />
           {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
           }
-        <Skype />
+        {/* <Skype /> */}
         </Body>
       </Router>
     </ThemeProvider>

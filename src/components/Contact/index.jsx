@@ -14,8 +14,7 @@ z-index: 1;
 align-items: center;
 @media (max-width: 960px) {
     padding: 0px;
-}
-`
+}`
 
 const Wrapper = styled.div`
 position: relative;
@@ -179,7 +178,7 @@ const Contact = () => {
           severity="success"
         /> */}
         <ContactForm onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
+          <ContactTitle>Email Me</ContactTitle>
           <ContactInput placeholder="Your Email" name="email" type='email' id='email' required />
           <ValidationError
             prefix="Email"
@@ -206,7 +205,7 @@ const Contact = () => {
   autoHideDuration={7000}
   onClose={() => setSuccessMessage('')}
   message={successMessage}
-  severity="success"
+  severity="Successfuly Sent"
 />
 
       </Wrapper>

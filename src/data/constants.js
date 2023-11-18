@@ -2,9 +2,9 @@ export const Bio = {
   name: "Suraj Singh Shekhawat",
   roles: [
     "Frontend Developer",
-    "Content Writer",
-    "UI/UX Designer",
+    "Wordpress Developer",
     "Programmer",
+    "I Like Coding"
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
@@ -95,21 +95,21 @@ export const skills = [
       },
     ],
   },
-  {
-    title: "Android",
-    skills: [
-      {
-        name: "Java",
-        image:
-          "https://drive.google.com/uc?export=view&id=1_rTXXaDtsXnjDw2pLCBESzrr89AfRfNP",
-      },
-      {
-        name: "Android Studio",
-        image:
-          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
-      },
-    ],
-  },
+  // {
+  //   title: "Android",
+  //   skills: [
+  //     {
+  //       name: "Java",
+  //       image:
+  //         "https://drive.google.com/uc?export=view&id=1_rTXXaDtsXnjDw2pLCBESzrr89AfRfNP",
+  //     },
+  //     {
+  //       name: "Android Studio",
+  //       image:
+  //         "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+  //     },
+  //   ],
+  // },
   {
     title: "Others",
     skills: [
@@ -151,9 +151,9 @@ export const experiences = [
   {
     id: 0,
     img: "https://appinventers.com/wp-content/uploads/2023/07/imgpsh_fullsize_anim.jpg",
-    role: "Frontend Engineer",
+    role: "Web Development Iternship",
     company: "Appinventers",
-    date: "June 2022 - Present",
+    date: "April 2022 - September 2022",
     desc: "Working on the frontend of the web application using ReactJS, Redux, Material UI, AngularJS and Wordpress",
     skills: [
       "ReactJS",
@@ -172,7 +172,7 @@ export const experiences = [
     img: "https://appinventers.com/wp-content/uploads/2023/07/imgpsh_fullsize_anim.jpg",
     role: "Wordpress Developer",
     company: "Appinventers",
-    date: "June 2022 - Present",
+    date: "Octomber 2022 - Present",
     desc: "Working on the frontend of the web application using ReactJS, Redux, Material UI, AngularJS and Wordpress",
     skills: [
       "ReactJS",
@@ -316,77 +316,32 @@ export const projects = [
       }
     ],
   },
-  {
-    id: 3,
-    title: "Wordpress Website",
-    date: "Sep 2023",
-    description:
-      "Designed and developed the Wordpress project, In this use a plugin, php and backend in this project.",
-    image:
-      "https://drive.google.com/uc?export=view&id=1qzhAv3KHHgb4OdepK-C4p1QahvJ0hgKy",
-    tags: [
-      "Worpress",
-      "Plugin",
-      "php",
-      "backend"
-    ],
-    category: "wordpress",
-    github: "https://github.com/SurajShekhawat",
-    // webapp: "https://suraj-introduction.netlify.app/",
-    member: [
-      {
-        name: "Suraj Singh Shekhawat",
-        img: "https://drive.google.com/uc?export=view&id=1OHecdr8bKYoADiXeUnPTCLC5-mkvNvdM",
-        linkedin: "https://www.linkedin.com/in/suraj-shekhawat-a5ba06218/",
-        github: "https://github.com/SurajShekhawat/",
-      }
-    ],
-  }
   // {
-  //   id: 2,
-  //   title: "Brain Tumor Detection",
-  //   date: "Jan 2023 - Mar 2023",
+  //   id: 3,
+  //   title: "Wordpress Website",
+  //   date: "Sep 2023",
   //   description:
-  //     "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
+  //     "Designed and developed the Wordpress project, In this use a plugin, php and backend in this project.",
   //   image:
-  //     "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-  //   tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-  //   category: "machine learning",
-  //   github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-  //   webapp: "https://brain-tumor.netlify.app/",
+  //     "https://drive.google.com/uc?export=view&id=1qzhAv3KHHgb4OdepK-C4p1QahvJ0hgKy",
+  //   tags: [
+  //     "Worpress",
+  //     "Plugin",
+  //     "php",
+  //     "backend"
+  //   ],
+  //   category: "wordpress",
+  //   github: "https://github.com/SurajShekhawat",
   //   member: [
   //     {
-  //       name: "Rishav Chanda",
-  //       img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-  //       linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-  //       github: "https://github.com/rishavchanda/",
-  //     },
-  //     {
-  //       name: "Upasana Chaudhuri",
-  //       img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-  //       linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-  //       github: "https://github.com/upasana0710",
-  //     },
+  //       name: "Suraj Singh Shekhawat",
+  //       img: "https://drive.google.com/uc?export=view&id=1OHecdr8bKYoADiXeUnPTCLC5-mkvNvdM",
+  //       linkedin: "https://www.linkedin.com/in/suraj-shekhawat-a5ba06218/",
+  //       github: "https://github.com/SurajShekhawat/",
+  //     }
   //   ],
-  // },
-  // {
-  //   id: 10,
-  //   title: "Job Finding App",
-  //   date: "Jun 2023 - Jul 2023",
-  //   description:
-  //     "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
-  //   image:
-  //     "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-  //   tags: ["React Native", "JavaScript", "Axios"],
-  //   category: "android app",
-  //   github: "https://github.com/rishavchanda/Job-finder-App",
-  //   webapp: "https://github.com/rishavchanda/Job-finder-App",
-  // },
+  // }
 ];
-
-// export const BlogSlider = [
-
-// ]
 
 export const TimeLineData = [
   { year: 2017, text: "Started my journey" },
